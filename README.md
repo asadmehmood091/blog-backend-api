@@ -40,7 +40,7 @@ User authentication (signup and login) with JWT tokens.
 CRUD operations for blog posts.
 Basic error handling and API response formatting.
 
-`
+
 blog-application/
 ├── config/
 │   └── config.js              # Database and environment configuration
@@ -62,4 +62,3 @@ blog-application/
 ├── package.json               # Project metadata and dependencies
 └── README.md                  # Project documentation
 
-`
