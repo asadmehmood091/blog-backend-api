@@ -62,3 +62,24 @@ blog-application/
 ├── package.json               # Project metadata and dependencies
 └── README.md                  # Project documentation
 
+
+## API Endpoints
+Auth:
+POST /api/auth/signup: Register a new user.
+POST /api/auth/login: Login a user.
+Posts:
+GET /api/posts: Fetch all posts.
+POST /api/posts: Create a new post.
+GET /api/posts/:id: Fetch a single post.
+PUT /api/posts/:id: Update a post.
+DELETE /api/posts/:id: Delete a post.
+Ensure you are authorized (logged in) to access the protected routes for post operations.
+
+## License
+This project is open-source and available under the MIT License.
+
+
+
+
+
+
