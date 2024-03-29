@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import { handleError } from './ErrorHandler.js';
 import postsRoutes from './routes/postsRoutes.js';
 import authRoutes from './routes/authRoutes.js';
-
+import adminRoutes from './routes/adminRoutes.js';
 dotenv.config();
 
 const app = express();
@@ -14,7 +14,8 @@ app.use(express.json());
 // Routes
 app.use('/api/v1/posts', postsRoutes);
 app.use('/api/v1/auth', authRoutes);
-// A sample route to demonstrate success response
+app.use('/api/v1/admin', adminRoutes);
+
 app.get('/api', (req, res) => {
   res.status(200).json({ message: "Welcome to blog API" });
 });

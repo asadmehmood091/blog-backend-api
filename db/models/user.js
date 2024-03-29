@@ -1,3 +1,4 @@
+// User model definition
 import { Sequelize } from 'sequelize';
 
 export default (sequelize, DataTypes) => {
@@ -10,6 +11,11 @@ export default (sequelize, DataTypes) => {
     password: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    role: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: 'user', // Default role is 'user'. You might have 'admin' as another role.
     }
   });
 
