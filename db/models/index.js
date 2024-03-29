@@ -11,4 +11,11 @@ const sequelize = new Sequelize(config.database, config.username, config.passwor
 const User = userModel(sequelize, Sequelize.DataTypes);
 const Post = postModel(sequelize, Sequelize.DataTypes);
 
-export default { User, Post, sequelize };
+const db = {
+  sequelize,
+  Sequelize,
+  User,
+};
+
+export { User, Post };
+export default db;

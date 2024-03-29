@@ -1,5 +1,5 @@
 // controllers/postsController.js
-import  Post  from '../db/models/index.js';
+import  {Post}  from '../db/models/index.js';
 
 const postsController = {
   // Create a new post
@@ -9,6 +9,7 @@ const postsController = {
         const post = await Post.create({ title, content });
         res.status(201).json(post);
     } catch (error) {
+      console.log(error, "error..........")
         res.status(400).json({ error: error.message });
     }
   },
