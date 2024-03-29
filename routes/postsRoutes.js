@@ -14,4 +14,5 @@ router.get('/getAllPosts', authenticateToken, getAllPosts);
 router.get('/getPostById/:id', authenticateToken, getPostById);
 router.post('/updatePost/:id', authenticateToken, getPostById);
 
+
 export default router;
