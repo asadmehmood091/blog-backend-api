@@ -15,6 +15,7 @@ const db = {
   sequelize,
   Sequelize,
   User,
+  Post,
 };
 
 export { User, Post };

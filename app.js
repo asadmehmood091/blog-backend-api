@@ -20,11 +20,11 @@ app.get('/api', (req, res) => {
 });
 
 // Fallback route for unmatched routes
-// app.use((req, res, next) => {
-//   const error = new Error("Not Found");
-//   error.status = 404;
-//   next(error);
-// });
+app.use((req, res, next) => {
+  const error = new Error("Not Found");
+  error.status = 404;
+  next(error);
+});
 
 // Global error handler
 // app.use((err, req, res, next) => {
